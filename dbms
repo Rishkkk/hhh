@@ -1,0 +1,6 @@
+1) Select distinct p,pno from project p, department d, employee e where e.dno=d.dno
+   And m.mgrssn = e.ssn and e.lname = 'scott') union
+  (Select distinct p1.pno from project p1,works_on w,
+   Employee E where p1.pno= w.pno and e1.ssn=w.ssn and e1.lname='scott');
+
+2) 
